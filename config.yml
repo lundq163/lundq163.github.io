@@ -1,5 +1,5 @@
-baseURL: "https://pascalmichaillat.org/hugo-website/" 
-title: Moritz-Maria von Igelfeld
+baseURL: "https://lundq163.github.io" 
+title: Jacob Lundquist
 paginate: 20
 theme: PaperMod
 
@@ -28,9 +28,8 @@ menu:
           weight: 5
 
 params:
-    description: "I am a Professor of Philology at the Institute of Romance Philology in Regensburg, Germany. My research focuses mostly on Portuguese irregular verbs.
-consequat."
-    author: Moritz-Maria von Igelfeld
+    description: "I am a Research Professional at the Center for Developmental Neuroimaging. My research focuses mostly on subtyping heterogeneity in neurodevelopmental disorders."
+    author: Jacob Lundquist
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: light
@@ -53,12 +52,12 @@ consequat."
     math: true
     profileMode:
           enabled: true
-          title: Professor Dr von Igelfeld
-          subtitle: "Wilkommen! I am a Professor in the Institute of Romance Philology at the University of Regensburg, Germany. My research focuses specifically on Portuguese irregular verbs. I was a doctoral student of Professor Dr Dr Dr Dieter Vogelsang, in Munich, Germany, and later a doctoral student (second assistant) of Professor Walter Schoeffler-Henschell at the University of Wiesbaden, Germany."
+          title: Jacob Lundquist
+          subtitle: "Hello and Welcome! I am currently a Research Professional in the Center for Developmental Neuroimaging at the Masonic Institute for the Developing Brain. I work on a variety of research projects within the field of neuroimaging, while primarily focused on subtyping the heterogeneity of neurodevelopmental disorders using elements of statistical learning. I was previously a Research Assistant at the Educational Neuroscience Lab while completing my Bachelor's degree at the University of Wisconsin-Madison, double majoring in Physics and Neurobiology."
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
-          imageTitle: Moritz-Maria von Igelfeld
+          imageTitle: Jacob Lundquist
           buttons:
             - name: Books
               url: books/
@@ -77,21 +76,19 @@ consequat."
 
     socialIcons:
         - name: Email
-          url: mailto:moritz.maria.von.igelfeld@gmail.com
+          url: lundq.jacob@gmail.com
         - name: CV
           url: cv.pdf
         - name: Google Scholar
-          url: https://scholar.google.com/citations?user=cL23w-4AAAAJ
+          url: https://orcid.org/0000-0001-9573-1954
         - name: Location
           url: location/
         - name: Office Hours
           url: officehours/
         - name: GitHub
-          url: https://github.com/pmichaillat
-        - name: YouTube
-          url: https://www.youtube.com/@alexandermccallsmithoffici9000
-        - name: Twitter
-          url: https://twitter.com/McCallSmith
+          url: https://github.com/lundq163
+        - name: LinkedIn
+          url: https://www.linkedin.com/in/jacob-t-lundquist/
 
     assets:
         disableHLJS: true
@@ -100,7 +97,7 @@ consequat."
         hiddenInList: false
         hiddenInSingle: true
     label:
-      text: "Moritz-Maria von Igelfeld"
+      text: "Jacob Lundquist"
       icon: favicon.ico
       iconHeight: 18
 
