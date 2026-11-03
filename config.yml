@@ -1,6 +1,7 @@
 baseURL: "https://lundq163.github.io" 
 title: Jacob Lundquist
-paginate: 20
+pagination:
+    pagerSize: 20
 theme: PaperMod
 
 enableInlineShortcodes: true
