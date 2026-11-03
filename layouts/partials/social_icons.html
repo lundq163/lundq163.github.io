@@ -1,0 +1,17 @@
+<div class="social-icons">
+    {{- $group := "" }}
+    {{- range $i, $e := . }}
+    {{- $g := $e.group | default "" }}
+    {{- if or (eq $i 0) (ne $g $group) }}
+    {{- if $i }}</div>{{ end }}
+    <div class="social-group">
+    {{- $group = $g }}
+    {{- end }}
+    {{- $url := trim $e.url " " }}
+    {{- $external := findRE "^https?://" $url }}
+    <a href="{{ $url }}"{{ if $external }} target="_blank" rel="noopener noreferrer me"{{ end }} title="{{ ($e.title | default $e.name) | title }}" aria-label="{{ $e.title | default $e.name }}">
+        {{ partial "svg.html" $e }}
+    </a>
+    {{- end }}
+    </div>
+</div>

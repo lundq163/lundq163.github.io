@@ -1,0 +1,125 @@
+/* Self-hosted fonts (Latin subset, SIL OFL) in static/fonts */
+@font-face { font-family: "Gelasio"; font-weight: 400; font-style: normal; font-display: swap; src: url("/fonts/gelasio-400.woff2") format("woff2"); }
+@font-face { font-family: "Gelasio"; font-weight: 600; font-style: normal; font-display: swap; src: url("/fonts/gelasio-600.woff2") format("woff2"); }
+@font-face { font-family: "Gelasio"; font-weight: 700; font-style: normal; font-display: swap; src: url("/fonts/gelasio-700.woff2") format("woff2"); }
+@font-face { font-family: "Karla"; font-weight: 400; font-style: normal; font-display: swap; src: url("/fonts/karla-400.woff2") format("woff2"); }
+@font-face { font-family: "Karla"; font-weight: 500; font-style: normal; font-display: swap; src: url("/fonts/karla-500.woff2") format("woff2"); }
+@font-face { font-family: "Karla"; font-weight: 700; font-style: normal; font-display: swap; src: url("/fonts/karla-700.woff2") format("woff2"); }
+
+/* Brand palette: Evergreen, Moss, Dew, Mist, Sunrise, Ember */
+:root {
+    --evergreen: #1E3329;
+    --moss: #6E7F6A;
+    --dew: #DDE7DF;
+    --mist: #F2F4F1;
+    --sunrise: #F2C14E;
+    --ember: #C8551F;
+    --ember-text: #B04A19; /* darker Ember: 4.9:1 on Mist (plain Ember is 4.0:1) */
+
+    --theme: var(--mist);
+    --entry: #fff;
+    --primary: var(--evergreen);
+    --secondary: #51624D;
+    --tertiary: var(--dew);
+    --content: var(--evergreen);
+    --code-bg: var(--dew);
+    --border: #C9D6CC;
+    --accent: var(--ember-text);
+    --darkpurple: var(--ember-text);
+    --midpurple: var(--sunrise);
+    --lightpurple: var(--dew);
+    --font-head: "Gelasio", Georgia, serif;
+    --font-body: "Karla", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* The .dark class is set by a script: visitor's saved choice, else their system setting */
+.dark {
+    --theme: var(--evergreen);
+    --entry: #264136;
+    --primary: var(--mist);
+    --secondary: #B7C4BA;
+    --tertiary: #2E4A3D;
+    --content: var(--mist);
+    --code-bg: #274036;
+    --border: #3C5848;
+    --accent: var(--sunrise);
+    --darkpurple: var(--sunrise);
+    --midpurple: var(--sunrise);
+    --lightpurple: #2E4A3D;
+}
+
+/* Home page has no header, so its toggle floats in the corner */
+.home-theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+    padding: 6px 8px;
+    line-height: 0;
+    color: var(--primary);
+    background: var(--tertiary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+.home-theme-toggle:hover { background: var(--sunrise); color: var(--evergreen); }
+
+body {
+    font-family: var(--font-body);
+    background: var(--theme);
+    color: var(--content);
+}
+
+h1, h2, h3, h4, h5, h6,
+.profile .profile_inner h1,
+.page-header h1,
+.post-title,
+.entry-hint,
+.logo a {
+    font-family: var(--font-head);
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+a { text-decoration-color: var(--accent); }
+.post-content a,
+.profile_inner span a { color: var(--accent); }
+
+.list { background: var(--theme); }
+.nav { background: var(--theme); }
+
+.profile img { border-color: var(--moss); }
+
+.button {
+    background: var(--tertiary);
+    border-color: var(--border);
+    color: var(--primary);
+}
+.button:hover {
+    background: var(--sunrise);
+    color: var(--evergreen);
+}
+.button:focus-visible,
+.social-icons a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+/* Grouped social icons: [research] gap [profile] gap [contact] */
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 40px;
+    padding: 12px 0;
+}
+.social-icons .social-group {
+    display: flex;
+    gap: 14px;
+}
+.social-icons a:not(:last-of-type) { margin-inline-end: 0; }
+.social-icons a { color: var(--primary); }
+.social-icons a:hover { color: var(--accent); }
+
+@media (max-width: 480px) {
+    .social-icons { gap: 10px 28px; }
+}

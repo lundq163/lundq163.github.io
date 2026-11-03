@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto">
 
-<head>
-	<meta name="generator" content="Hugo 0.126.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
@@ -11,7 +10,7 @@
 <meta name="description" content="I am a Research Professional at the Center for Developmental Neuroimaging. My research focuses mostly on subtyping heterogeneity in neurodevelopmental disorders.">
 <meta name="author" content="Jacob Lundquist">
 <link rel="canonical" href="http://localhost:1313/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.f1e4501a2ac2bf9fff5dc0c77f152affb825b371cb176acfcf9201015d59b4d4.css" integrity="sha256-8eRQGirCv5//XcDHfxUq/7gls3HLF2rPz5IBAV1ZtNQ=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.403cd1cf3a406f4149a4d06c544d7511783ee91a4806cc24cbe6329ff7d329a4.css" integrity="sha256-QDzRzzpAb0FJpNBsVE11EXg&#43;6RpIBswky&#43;Yyn/fTKaQ=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
@@ -26,6 +25,34 @@
         #theme-toggle,
         .top-link {
             display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --hljs-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
         }
 
     </style>
@@ -47,7 +74,7 @@
   "description": "I am a Research Professional at the Center for Developmental Neuroimaging. My research focuses mostly on subtyping heterogeneity in neurodevelopmental disorders.",
   "thumbnailUrl": "http://localhost:1313/favicon.ico",
   "sameAs": [
-      "lundq.jacob@gmail.com", "cv.pdf", "https://orcid.org/0000-0001-9573-1954", "location/", "officehours/", "https://github.com/lundq163", "https://www.linkedin.com/in/jacob-t-lundquist/"
+      "https://scholar.google.com/citations?user=V7lDoNUAAAAJ\u0026hl=en", "https://orcid.org/0000-0001-9573-1954", "https://github.com/lundq163", "https://www.linkedin.com/in/jacob-t-lundquist/", "cv.pdf", "mailto:lundq.jacob@gmail.com?subject=Hello%20from%20your%20website", "https://calendly.com/REPLACE-ME"
   ]
 }
 </script>
@@ -81,51 +108,65 @@
  
 
 
+	<meta name="generator" content="Hugo 0.169.0">
 </head>
 
-<body class="list" id="top">
+<body class="list" id="top"><script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark');
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+</script>
+<button id="theme-toggle" class="home-theme-toggle" accesskey="t" title="Toggle light/dark (Alt + T)" aria-label="Toggle light or dark theme">
+    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </svg>
+    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="5"></circle>
+        <line x1="12" y1="1" x2="12" y2="3"></line>
+        <line x1="12" y1="21" x2="12" y2="23"></line>
+        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+        <line x1="1" y1="12" x2="3" y2="12"></line>
+        <line x1="21" y1="12" x2="23" y2="12"></line>
+        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+</button>
+
     <main class="main"><div class="profile">
     <div class="profile_inner">
         <img draggable="false" src="http://localhost:1313/picture.jpeg" alt="Jacob Lundquist" title="Jacob Lundquist"
             height="160" width="160" />
         <h1>Jacob Lundquist</h1>
         <span>Hello and Welcome! I am currently a Research Professional in the Center for Developmental Neuroimaging at the Masonic Institute for the Developing Brain. I work on a variety of research projects within the field of neuroimaging, while primarily focused on subtyping the heterogeneity of neurodevelopmental disorders using elements of statistical learning. I was previously a Research Assistant at the Educational Neuroscience Lab while completing my Bachelor&rsquo;s degree at the University of Wisconsin-Madison, double majoring in Physics and Neurobiology.</span><div class="social-icons">
-    <a href="lundq.jacob@gmail.com" target="_blank" rel="noopener noreferrer me" title="Email">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-    <polyline points="22,6 12,13 2,6"></polyline>
-</svg>
-    </a>
-    <a href="cv.pdf" target="_blank" rel="noopener noreferrer me" title="CV">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <path
-        d="M4 4v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.342a2 2 0 0 0-.602-1.43l-4.44-4.342A2 2 0 0 0 13.56 2H6a2 2 0 0 0-2 2z" />
-    <path d="M9 13h6" />
-    <path d="M9 17h3" />
-    <path d="M14 2v4a2 2 0 0 0 2 2h4" /></svg>
-    </a>
-    <a href="https://orcid.org/0000-0001-9573-1954" target="_blank" rel="noopener noreferrer me" title="Google Scholar">
+    <div class="social-group">
+    <a href="https://scholar.google.com/citations?user=V7lDoNUAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer me" title="Google Scholar" aria-label="Google Scholar">
         <svg viewBox="0 0 24 25" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
      stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
      <path
          d="M5.242 13.769L0.5 9.5 12 1l11.5 9-5.242 3.769C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
  </svg>
     </a>
-    <a href="location/" target="_blank" rel="noopener noreferrer me" title="Location">
-        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="currentColor" d="M12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5M12 2a7 7 0 0 1 7 7c0 5.25-7 13-7 13S5 14.25 5 9a7 7 0 0 1 7-7m0 2a5 5 0 0 0-5 5c0 1 0 3 5 9.71C17 12 17 10 17 9a5 5 0 0 0-5-5Z"/></svg>
-    </a>
-    <a href="officehours/" target="_blank" rel="noopener noreferrer me" title="Office Hours">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" /> <circle cx="18" cy="18" r="4" /> <path d="M15 3v4" /> <path d="M7 3v4" /> <path d="M3 11h16" /> <path d="M18 16.496v1.504l1 1" /> 
+    <a href="https://orcid.org/0000-0001-9573-1954" target="_blank" rel="noopener noreferrer me" title="ORCID" aria-label="ORCID">
+        <svg width="24" height="24" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M128 256C198.7 256 256 198.7 256 128C256 57.3 198.7 0 128 0C57.3 0 0 57.3 0 128C0 198.7 57.3 256 128 256ZM70.9 186.2H86.3V127.5V79.0999H70.9V186.2ZM108.9 79.0999H150.5C190.1 79.0999 207.5 107.4 207.5 132.7C207.5 160.2 186 186.3 150.7 186.3H108.9V79.0999ZM124.3 172.4H148.8C183.7 172.4 191.7 145.9 191.7 132.7C191.7 111.2 178 93 148 93H124.3V172.4ZM78.6 66.8999C84.2 66.8999 88.7 62.2999 88.7 56.7999C88.7 51.2999 84.2 46.7 78.6 46.7C73 46.7 68.5 51.2 68.5 56.7999C68.5 62.2999 73 66.8999 78.6 66.8999Z"
+        fill="currentColor" />
 </svg>
     </a>
-    <a href="https://github.com/lundq163" target="_blank" rel="noopener noreferrer me" title="GitHub">
+    <a href="https://github.com/lundq163" target="_blank" rel="noopener noreferrer me" title="GitHub" aria-label="GitHub">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
     <path
         d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
     </path>
 </svg>
-    </a>
-    <a href="https://www.linkedin.com/in/jacob-t-lundquist/" target="_blank" rel="noopener noreferrer me" title="LinkedIn">
+    </a></div>
+    <div class="social-group">
+    <a href="https://www.linkedin.com/in/jacob-t-lundquist/" target="_blank" rel="noopener noreferrer me" title="LinkedIn" aria-label="LinkedIn">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
     stroke-linecap="round" stroke-linejoin="round">
     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
@@ -133,6 +174,26 @@
     <circle cx="4" cy="4" r="2"></circle>
 </svg>
     </a>
+    <a href="cv.pdf" title="Resume" aria-label="Resume">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M4 4v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8.342a2 2 0 0 0-.602-1.43l-4.44-4.342A2 2 0 0 0 13.56 2H6a2 2 0 0 0-2 2z" />
+    <path d="M9 13h6" />
+    <path d="M9 17h3" />
+    <path d="M14 2v4a2 2 0 0 0 2 2h4" /></svg>
+    </a></div>
+    <div class="social-group">
+    <a href="mailto:lundq.jacob@gmail.com?subject=Hello%20from%20your%20website" title="Email" aria-label="Email">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+    <polyline points="22,6 12,13 2,6"></polyline>
+</svg>
+    </a>
+    <a href="https://calendly.com/REPLACE-ME" target="_blank" rel="noopener noreferrer me" title="Meeting Scheduler" aria-label="Meeting Scheduler">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" /> <circle cx="18" cy="18" r="4" /> <path d="M15 3v4" /> <path d="M7 3v4" /> <path d="M3 11h16" /> <path d="M18 16.496v1.504l1 1" /> 
+</svg>
+    </a>
+    </div>
 </div>
 
         <div class="buttons">
@@ -166,17 +227,6 @@
                     Archive
                 </span>
             </a>
-            <a class="button" href="https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_%28character%29" rel="noopener" title="Blog">
-                <span class="button-inner">
-                    Blog&nbsp;
-                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
-                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="14" width="14">
-                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
-                        <path d="M15 3h6v6"></path>
-                        <path d="M10 14L21 3"></path>
-                    </svg>
-                </span>
-            </a>
         </div>
     </div>
 </div>
@@ -184,7 +234,7 @@
     </main>
     
 <footer class="footer">
-    &copy; 2024 Jacob Lundquist
+    &copy; 2026 Jacob Lundquist
     <span>
     &middot;  Powered by 
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
@@ -221,6 +271,18 @@
             }
         });
     });
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
 
 </script>
 </body>

@@ -23,18 +23,15 @@ menu:
         - name: Data
           url: data/
           weight: 4 
-        - name: Blog
-          url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
-          weight: 5
 
 params:
     description: "I am a Research Professional at the Center for Developmental Neuroimaging. My research focuses mostly on subtyping heterogeneity in neurodevelopmental disorders."
     author: Jacob Lundquist
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
-    defaultTheme: light
+    defaultTheme: auto
     hideFooter: false
-    disableThemeToggle: true
+    disableThemeToggle: false
     ShowShareButtons: false
     ShowReadingTime: false
     disableSpecial1stPost: true
@@ -71,24 +68,30 @@ params:
               url: tags/
             - name: Archive
               url: archive/
-            - name: Blog
-              url: https://en.wikipedia.org/wiki/Moritz-Maria_von_Igelfeld_(character)
 
     socialIcons:
-        - name: Email
-          url: lundq.jacob@gmail.com
-        - name: CV
-          url: cv.pdf
         - name: Google Scholar
+          url: https://scholar.google.com/citations?user=V7lDoNUAAAAJ&hl=en
+          group: research
+        - name: ORCID
           url: https://orcid.org/0000-0001-9573-1954
-        - name: Location
-          url: location/
-        - name: Office Hours
-          url: officehours/
+          group: research
         - name: GitHub
           url: https://github.com/lundq163
+          group: research
         - name: LinkedIn
           url: https://www.linkedin.com/in/jacob-t-lundquist/
+          group: profile
+        - name: Resume
+          url: cv.pdf
+          group: profile
+        - name: Email
+          url: mailto:lundq.jacob@gmail.com?subject=Hello%20from%20your%20website
+          group: contact
+        - name: Meeting Scheduler
+          # TODO: replace with the real Calendly link once it exists
+          url: https://calendly.com/REPLACE-ME
+          group: contact
 
     assets:
         disableHLJS: true
