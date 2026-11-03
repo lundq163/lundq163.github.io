@@ -6,23 +6,18 @@ theme: PaperMod
 enableInlineShortcodes: true
 enableRobotsTXT: true
 
-taxonomies:
-    tag: tags
+disableKinds:
+    - taxonomy
+    - term
 
 menu:
     main:
-        - name: Books
-          url: books/
-          weight: 1 
         - name: Papers
           url: papers/
+          weight: 1
+        - name: Projects
+          url: projects/
           weight: 2
-        - name: Courses
-          url: courses/
-          weight: 3
-        - name: Data
-          url: data/
-          weight: 4 
 
 params:
     description: "I am a Research Professional at the Center for Developmental Neuroimaging. My research focuses mostly on subtyping heterogeneity in neurodevelopmental disorders."
@@ -56,18 +51,10 @@ params:
           imageHeight: 160
           imageTitle: Jacob Lundquist
           buttons:
-            - name: Books
-              url: books/
             - name: Papers
               url: papers/
-            - name: Courses
-              url: courses/
-            - name: Data
-              url: data/
-            - name: Tags
-              url: tags/
-            - name: Archive
-              url: archive/
+            - name: Projects
+              url: projects/
 
     socialIcons:
         - name: Google Scholar
@@ -83,7 +70,7 @@ params:
           url: https://www.linkedin.com/in/jacob-t-lundquist/
           group: profile
         - name: Resume
-          url: cv.pdf
+          url: /cv.pdf
           group: profile
         - name: Email
           url: mailto:lundq.jacob@gmail.com?subject=Hello%20from%20your%20website
@@ -101,7 +88,7 @@ params:
         hiddenInSingle: true
     label:
       text: "Jacob Lundquist"
-      icon: favicon.ico
+      icon: favicon.svg
       iconHeight: 18
 
 markup:
