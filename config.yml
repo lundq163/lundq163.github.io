@@ -21,7 +21,7 @@ menu:
           weight: 2
 
 params:
-    description: "I am a Research Professional at the Center for Developmental Neuroimaging. My research focuses mostly on subtyping heterogeneity in neurodevelopmental disorders."
+    description: "MBA candidate at Columbia Business School and MS in AI/ML candidate at Columbia Engineering, with 5+ years in ML and software for neuroimaging research."
     author: Jacob Lundquist
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
@@ -46,7 +46,14 @@ params:
     profileMode:
           enabled: true
           title: Jacob Lundquist
-          subtitle: "Hello and Welcome! I am currently a Research Professional in the Center for Developmental Neuroimaging at the Masonic Institute for the Developing Brain. I work on a variety of research projects within the field of neuroimaging, while primarily focused on subtyping the heterogeneity of neurodevelopmental disorders using elements of statistical learning. I was previously a Research Assistant at the Educational Neuroscience Lab while completing my Bachelor's degree at the University of Wisconsin-Madison, double majoring in Physics and Neurobiology."
+          subtitle: |
+            Hello and welcome! A little about me:
+
+            I am currently pursuing an MBA at Columbia Business School and an MS in Artificial Intelligence and Machine Learning at Columbia Engineering. Here, I am deepening my expertise in ML/DL while building the leadership, strategy and management skills to turn technical projects into real-world, measurable impact.
+
+            Before Columbia, I spent 5+ years building software systems and leading technical projects in large-scale neuroimaging and clinical research. Most recently, I was at the Masonic Institute for the Developing Brain, where I developed ML/computer vision systems, data infrastructure and automated research workflows. Previously, I completed my BS at the University of Wisconsin–Madison, double majoring in physics and neurobiology. That’s where I first began cultivating my strongest skills in management, machine learning, data science, software engineering and high-performance computing.
+
+            This site is designed to be a canvas displaying my projects and contributions to date. Please explore my work, or get in touch via the Calendly link. I am always happy to connect.
           imageUrl: "picture.jpeg"
           imageWidth: 160
           imageHeight: 160
@@ -76,10 +83,10 @@ params:
         - name: Email
           url: mailto:lundq.jacob@gmail.com?subject=Hello%20from%20your%20website
           group: contact
-        - name: Meeting Scheduler
-          # TODO: replace with the real Calendly link once it exists
-          url: https://calendly.com/REPLACE-ME
-          group: contact
+        # Hidden until the real Calendly link exists (issue #10).
+        # - name: Meeting Scheduler
+        #   url: https://calendly.com/REPLACE-ME
+        #   group: contact
 
     assets:
         disableHLJS: true
