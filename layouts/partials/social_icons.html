@@ -9,7 +9,8 @@
     {{- end }}
     {{- $url := trim $e.url " " }}
     {{- $external := or (findRE "^https?://" $url) (findRE "(?i)\\.pdf$" $url) }}
-    <a href="{{ $url }}"{{ if $external }} target="_blank" rel="noopener noreferrer me"{{ end }} title="{{ ($e.title | default $e.name) | title }}" aria-label="{{ $e.title | default $e.name }}">
+    {{- $isFile := findRE "(?i)\\.pdf$" $url }}
+    <a href="{{ $url }}"{{ if $external }} target="_blank" rel="noopener noreferrer{{ if not $isFile }} me{{ end }}"{{ end }} title="{{ ($e.title | default $e.name) | title }}" aria-label="{{ $e.title | default $e.name }}">
         {{ partial "svg.html" $e }}
     </a>
     {{- end }}
