@@ -84,6 +84,7 @@ h1, h2, h3, h4, h5, h6,
 a { text-decoration-color: var(--accent); }
 .post-content a,
 .profile_inner span a { color: var(--accent); }
+.profile_inner span p + p { margin-top: 0.85em; }
 
 .list { background: var(--theme); }
 .nav { background: var(--theme); }
