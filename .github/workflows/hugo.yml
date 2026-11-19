@@ -1,10 +1,14 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
+# Builds the Hugo site on every pull request (as a required check for main)
+# and builds + deploys to GitHub Pages on every push to main.
 name: Deploy Hugo site to Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Build and deploy on pushes to the default branch
   push:
     branches: ["main"]
+
+  # Build only (no deploy) for pull requests, so they can be required to pass
+  pull_request:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -15,11 +19,11 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Deploys share one group and are never cancelled mid-run.
+# PR builds get a group per PR, and a newer push to the PR cancels the older build.
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: ${{ github.event_name == 'pull_request' && format('pr-{0}', github.ref) || 'pages' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 # Default to bash
 defaults:
@@ -27,7 +31,7 @@ defaults:
     shell: bash
 
 jobs:
-  # Build job
+  # Build job (this job's name, "build", is the required status check on main)
   build:
     runs-on: ubuntu-latest
     env:
@@ -43,6 +47,7 @@ jobs:
           submodules: recursive
       - name: Setup Pages
         id: pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
@@ -51,17 +56,21 @@ jobs:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
+          # PR builds skip "Setup Pages", so fall back to the live URL
+          BASE_URL: ${{ steps.pages.outputs.base_url || 'https://lundq163.github.io' }}
         run: |
           hugo \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+            --baseURL "${BASE_URL}/"
       - name: Upload artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
 
-  # Deployment job
+  # Deployment job (never runs for pull requests)
   deploy:
+    if: github.event_name != 'pull_request'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
