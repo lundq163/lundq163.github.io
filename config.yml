@@ -87,10 +87,10 @@ params:
         - name: Email
           url: mailto:lundq.jacob@gmail.com?subject=Hello%20from%20your%20website
           group: contact
-        # Hidden until the real Calendly link exists (issue #10).
-        # - name: Meeting Scheduler
-        #   url: https://calendly.com/REPLACE-ME
-        #   group: contact
+        - name: Meeting Scheduler
+          title: Schedule a meeting
+          url: https://calendly.com/lundq-jacob/15min
+          group: contact
 
     assets:
         disableHLJS: true
