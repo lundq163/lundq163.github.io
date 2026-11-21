@@ -155,6 +155,20 @@ a { text-decoration-color: var(--accent); }
 .post-header .paper-logos { margin-top: 16px; }
 .post-header .paper-logo { height: 58px; }
 .post-header .paper-logo img { max-height: 42px; max-width: 170px; }
+/* Square logos with fine detail (Elsevier tree) get most of the tile height */
+.paper-logo--large { padding: 2px 8px; }
+.paper-logo--large img { max-height: 44px; }
+.post-header .paper-logo--large img { max-height: 54px; }
+/* Text name beside a mark that isn't recognizable on its own (MIT Press) */
+.paper-logo-label {
+    margin-left: 8px;
+    color: #111;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+}
+.post-header .paper-logo-label { font-size: 17px; }
 .paper-logos + .entry-content { margin: 0 0 12px; }
 .list-content-below { margin-top: 24px; }
 .paper-logo-credit { margin-top: 1.5em; opacity: 0.75; }

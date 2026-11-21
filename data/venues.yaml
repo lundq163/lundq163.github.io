@@ -1,17 +1,21 @@
 # Publisher and journal logos shown on the Papers list and each paper page.
 # A paper picks its entry with `venue: <key>` in its front matter.
+# Optional: publisher_label (text shown beside the logo), publisher_large (bigger logo tile).
 imaging-neuroscience:
   journal: Imaging Neuroscience
   journal_logo: /images/logos/imaging-neuroscience.png
   journal_credit: 'Imaging Neuroscience logo: <a href="https://commons.wikimedia.org/wiki/File:Imaging_Neuroscience.png">Wikimedia Commons</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> (rearranged horizontally).'
   publisher: MIT Press
   publisher_logo: /images/logos/mit-press.svg
+  publisher_label: The MIT Press
 developmental-cognitive-neuroscience:
   journal: Developmental Cognitive Neuroscience
   journal_logo: /images/logos/developmental-cognitive-neuroscience.png
   journal_dark: true
   publisher: Elsevier
   publisher_logo: /images/logos/elsevier.svg
+  publisher_label: Elsevier
+  publisher_large: true
 scientific-data:
   journal: Scientific Data
   journal_logo: /images/logos/scientific-data.svg
