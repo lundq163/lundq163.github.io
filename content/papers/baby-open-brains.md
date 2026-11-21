@@ -4,6 +4,7 @@ date: 2025-08-14
 author: ["Feczko E", "Stoyell SM", "Moore LA", "…", "Lundquist JT", "…", "Elison JT"]
 description: "Baby Open Brains: An open-source dataset of infant brain segmentations. Scientific Data 12 (2025)."
 summary: "Scientific Data 12 (2025)"
+venue: scientific-data
 editPost:
     URL: "https://doi.org/10.1038/s41597-025-05404-y"
     Text: "Scientific Data"
@@ -22,23 +23,3 @@ Reproducibility of neuroimaging research on infant brain development remains lim
 
 <small>Abstract reproduced from the publisher under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).</small>
 
----
-
-##### Citation
-
-Feczko E, Stoyell SM, Moore LA, Alexopoulos D, Bagonis M, Barrett K, Bower B, Cavender A, Chamberlain TA, Conan G, Day TKM, Goradia D, Graham A, Heisler-Roman L, Hendrickson TJ, Houghton A, Kardan O, Kiffmeyer EA, Lee EG, **Lundquist JT**, Lucena C, Martin T, Mummaneni A, Myricks M, Narnur P, Perrone AJ, Reiners P, Rueter AR, Saw H, Styner M, Sung S, Tiklasky B, Wisnowski JL, Yacoub E, Zimmermann B, Smyser CD, Rosenberg MD, Fair DA, Elison JT. 2025. “Baby Open Brains: An open-source dataset of infant brain segmentations.” *Scientific Data* 12. [https://doi.org/10.1038/s41597-025-05404-y](https://doi.org/10.1038/s41597-025-05404-y)
-
-```bibtex
-@article{Feczko_2025,
-  title = {Baby Open Brains: An open-source dataset of infant brain segmentations},
-  volume = {12},
-  ISSN = {2052-4463},
-  url = {http://dx.doi.org/10.1038/s41597-025-05404-y},
-  DOI = {10.1038/s41597-025-05404-y},
-  number = {1},
-  journal = {Scientific Data},
-  publisher = {Springer Science and Business Media LLC},
-  author = {Feczko, Eric and Stoyell, Sally M. and Moore, Lucille A. and Alexopoulos, Dimitrios and Bagonis, Maria and Barrett, Kenneth and Bower, Brad and Cavender, Addison and Chamberlain, Taylor A. and Conan, Greg and Day, Trevor K. M. and Goradia, Dhruman and Graham, Alice and Heisler-Roman, Lucas and Hendrickson, Timothy J. and Houghton, Audrey and Kardan, Omid and Kiffmeyer, Elizabeth A. and Lee, Erik G. and Lundquist, Jacob T. and Lucena, Carina and Martin, Tabitha and Mummaneni, Anurima and Myricks, Mollie and Narnur, Pranav and Perrone, Anders J. and Reiners, Paul and Rueter, Amanda R. and Saw, Hteemoo and Styner, Martin and Sung, Sooyeon and Tiklasky, Barry and Wisnowski, Jessica L. and Yacoub, Essa and Zimmermann, Brett and Smyser, Christopher D. and Rosenberg, Monica D. and Fair, Damien A. and Elison, Jed T.},
-  year = {2025}, month=Aug
-}
-```

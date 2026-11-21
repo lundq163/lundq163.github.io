@@ -4,6 +4,7 @@ date: 2026-03-09
 author: ["Hendrickson TJ", "Reiners P", "Moore LA", "Lundquist JT", "…", "Feczko E"]
 description: "BIBSNet: A deep learning baby image brain segmentation network for MRI scans. Developmental Cognitive Neuroscience 79 (2026)."
 summary: "Developmental Cognitive Neuroscience 79 (2026)"
+venue: developmental-cognitive-neuroscience
 editPost:
     URL: "https://doi.org/10.1016/j.dcn.2026.101706"
     Text: "Developmental Cognitive Neuroscience"
@@ -28,23 +29,3 @@ editPost:
 
 <small>Abstract reproduced from the publisher under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).</small>
 
----
-
-##### Citation
-
-Hendrickson TJ, Reiners P, Moore LA, **Lundquist JT**, Fayzullobekova B, Perrone AJ, Lee EG, Moser J, Day TKM, Alexopoulos D, Styner M, Kardan O, Chamberlain TA, Mummaneni A, Caldas HA, Bower B, Stoyell S, Martin T, Sung S, Fair EA, Carter K, Uriarte-Lopez J, Rueter AR, Yacoub E, Rosenberg MD, Smyser CD, Elison JT, Graham A, Fair DA, Feczko E. 2026. “BIBSNet: A deep learning baby image brain segmentation network for MRI scans.” *Developmental Cognitive Neuroscience* 79. [https://doi.org/10.1016/j.dcn.2026.101706](https://doi.org/10.1016/j.dcn.2026.101706)
-
-```bibtex
-@article{Hendrickson_2026,
-  title = {BIBSNet: A deep learning baby image brain segmentation network for MRI scans},
-  volume = {79},
-  ISSN = {1878-9293},
-  url = {http://dx.doi.org/10.1016/j.dcn.2026.101706},
-  DOI = {10.1016/j.dcn.2026.101706},
-  journal = {Developmental Cognitive Neuroscience},
-  publisher = {Elsevier BV},
-  author = {Hendrickson, Timothy J. and Reiners, Paul and Moore, Lucille A. and Lundquist, Jacob T. and Fayzullobekova, Begim and Perrone, Anders J. and Lee, Erik G. and Moser, Julia and Day, Trevor K.M. and Alexopoulos, Dimitrios and Styner, Martin and Kardan, Omid and Chamberlain, Taylor A. and Mummaneni, Anurima and Caldas, Henrique A. and Bower, Brad and Stoyell, Sally and Martin, Tabitha and Sung, Sooyeon and Fair, Ermias A. and Carter, Kenevan and Uriarte-Lopez, Jonathan and Rueter, Amanda R. and Yacoub, Essa and Rosenberg, Monica D. and Smyser, Christopher D. and Elison, Jed T. and Graham, Alice and Fair, Damien A. and Feczko, Eric},
-  year = {2026}, month=June,
-  pages = {101706}
-}
-```

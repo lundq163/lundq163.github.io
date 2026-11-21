@@ -124,3 +124,37 @@ a { text-decoration-color: var(--accent); }
 @media (max-width: 480px) {
     .social-icons { gap: 10px 28px; }
 }
+
+/* Publisher + journal logos on the Papers list and paper pages */
+.paper-logos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0 14px;
+}
+.paper-logo {
+    display: inline-flex;
+    align-items: center;
+    height: 48px;
+    padding: 6px 12px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+.paper-logo--dark { background: #000; }
+/* Cap both height and width so square marks and wide wordmarks look balanced */
+.paper-logo img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 34px;
+    max-width: 140px;
+    margin: 0;
+}
+.post-header .paper-logos { margin-top: 16px; }
+.post-header .paper-logo { height: 58px; }
+.post-header .paper-logo img { max-height: 42px; max-width: 170px; }
+.paper-logos + .entry-content { margin: 0 0 12px; }
+.list-content-below { margin-top: 24px; }
+.paper-logo-credit { margin-top: 1.5em; opacity: 0.75; }

@@ -25,7 +25,7 @@
 </header>
 {{- end }}
 
-{{- if .Content }}
+{{- if and .Content (not .Params.contentBelow) }}
 <div class="post-content">
   {{- if not (.Param "disableAnchoredHeadings") }}
   {{- partial "anchored_headings.html" .Content -}}
@@ -67,6 +67,7 @@
       {{- if .Draft }}<sup><span class="entry-isdraft">&nbsp;&nbsp;[draft]</span></sup>{{- end }}
     </h2>
   </header>
+  {{- partial "paper_logos.html" . }}
   {{- if (ne (.Param "hideSummary") true) }}
   <div class="entry-content">
     <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
@@ -79,6 +80,12 @@
   {{- end }}
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
+{{- end }}
+
+{{- if and .Content .Params.contentBelow }}
+<div class="post-content list-content-below">
+  {{- .Content }}
+</div>
 {{- end }}
 
 {{- if gt $paginator.TotalPages 1 }}

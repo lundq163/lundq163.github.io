@@ -15,6 +15,7 @@
       {{- partial "post_canonical.html" . -}}
     </div>
     {{- end }}
+    {{- partial "paper_logos.html" . }}
   </header>
   {{- $isHidden := .Params.cover.hidden | default site.Params.cover.hiddenInSingle | default site.Params.cover.hidden }}
   {{- partial "cover.html" (dict "cxt" . "IsHome" false "isHidden" $isHidden) }}
@@ -27,6 +28,9 @@
     {{- if not (.Param "disableAnchoredHeadings") }}
     {{- partial "anchored_headings.html" .Content -}}
     {{- else }}{{ .Content }}{{ end }}
+    {{- with .Params.venue }}{{ with (index hugo.Data.venues .).journal_credit }}
+    <p class="paper-logo-credit"><small>{{ . | safeHTML }}</small></p>
+    {{- end }}{{ end }}
   </div>
   {{- end }}
 

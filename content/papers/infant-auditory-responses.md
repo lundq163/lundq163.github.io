@@ -4,6 +4,7 @@ date: 2025-11-14
 author: ["Moser J", "Labonte AK", "Madison TJ", "…", "Lundquist JT", "…", "Sylvester CM"]
 description: "Precision functional neuroimaging reveals individually specific auditory responses in infants. Developmental Cognitive Neuroscience 77 (2026)."
 summary: "Developmental Cognitive Neuroscience 77 (2026)"
+venue: developmental-cognitive-neuroscience
 editPost:
     URL: "https://doi.org/10.1016/j.dcn.2025.101644"
     Text: "Developmental Cognitive Neuroscience"
@@ -21,23 +22,3 @@ Adaptively responding to salient stimuli in the environment is a fundamental fea
 
 <small>Abstract reproduced from the publisher under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).</small>
 
----
-
-##### Citation
-
-Moser J, Labonte AK, Madison TJ, Hantzsch L, Pham HHN, Weldon KB, Camacho MC, Schwarzlose RF, Koirala S, **Lundquist JT**, Sung S, Morales Carrasco C, Hermosillo RJM, Nelson SM, Elison JT, Fair DA, Sylvester CM. 2026. “Precision functional neuroimaging reveals individually specific auditory responses in infants.” *Developmental Cognitive Neuroscience* 77. [https://doi.org/10.1016/j.dcn.2025.101644](https://doi.org/10.1016/j.dcn.2025.101644)
-
-```bibtex
-@article{Moser_2026,
-  title = {Precision functional neuroimaging reveals individually specific auditory responses in infants},
-  volume = {77},
-  ISSN = {1878-9293},
-  url = {http://dx.doi.org/10.1016/j.dcn.2025.101644},
-  DOI = {10.1016/j.dcn.2025.101644},
-  journal = {Developmental Cognitive Neuroscience},
-  publisher = {Elsevier BV},
-  author = {Moser, Julia and Labonte, Alyssa K. and Madison, Thomas J. and Hantzsch, Lana and Pham, Han H.N. and Weldon, Kimberly B. and Camacho, M. Catalina and Schwarzlose, Rebecca F. and Koirala, Sanju and Lundquist, Jacob T. and Sung, Sooyeon and Morales Carrasco, Cristian and Hermosillo, Robert J.M. and Nelson, Steven M. and Elison, Jed T. and Fair, Damien A. and Sylvester, Chad M.},
-  year = {2026}, month=Jan,
-  pages = {101644}
-}
-```

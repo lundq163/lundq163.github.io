@@ -4,6 +4,7 @@ date: 2025-01-09
 author: ["Moser J", "Nelson SM", "Koirala S", "…", "Lundquist JT", "…", "Fair DA"]
 description: "Multi-echo acquisition and thermal denoising advances precision functional imaging. Imaging Neuroscience 3 (2025)."
 summary: "Imaging Neuroscience 3 (2025)"
+venue: imaging-neuroscience
 editPost:
     URL: "https://doi.org/10.1162/imag_a_00426"
     Text: "Imaging Neuroscience"
@@ -21,22 +22,3 @@ The characterization of individual functional brain organization with Precision 
 
 <small>Abstract reproduced from the publisher under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).</small>
 
----
-
-##### Citation
-
-Moser J, Nelson SM, Koirala S, Madison TJ, Labonte AK, Carrasco CM, Feczko E, Moore LA, **Lundquist JT**, Weldon KB, Grimsrud G, Hufnagle K, Ahmed W, Myers MJ, Adeyemo B, Snyder AZ, Gordon EM, Dosenbach NUF, Tervo-Clemmens B, Larsen B, Moeller S, Yacoub E, Vizioli L, Uğurbil K, Laumann TO, Sylvester CM, Fair DA. 2025. “Multi-echo acquisition and thermal denoising advances precision functional imaging.” *Imaging Neuroscience* 3. [https://doi.org/10.1162/imag_a_00426](https://doi.org/10.1162/imag_a_00426)
-
-```bibtex
-@article{Moser_2025,
-  title = {Multi-echo acquisition and thermal denoising advances precision functional imaging},
-  volume = {3},
-  ISSN = {2837-6056},
-  url = {http://dx.doi.org/10.1162/imag_a_00426},
-  DOI = {10.1162/imag_a_00426},
-  journal = {Imaging Neuroscience},
-  publisher = {MIT Press},
-  author = {Moser, Julia and Nelson, Steven M. and Koirala, Sanju and Madison, Thomas J. and Labonte, Alyssa K. and Carrasco, Cristian Morales and Feczko, Eric and Moore, Lucille A. and Lundquist, Jacob T. and Weldon, Kimberly B. and Grimsrud, Gracie and Hufnagle, Kristina and Ahmed, Weli and Myers, Michael J. and Adeyemo, Babatunde and Snyder, Abraham Z. and Gordon, Evan M. and Dosenbach, Nico U.F. and Tervo-Clemmens, Brenden and Larsen, Bart and Moeller, Steen and Yacoub, Essa and Vizioli, Luca and Uğurbil, Kamil and Laumann, Timothy O. and Sylvester, Chad M. and Fair, Damien A.},
-  year = {2025}
-}
-```
