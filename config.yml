@@ -80,10 +80,9 @@ params:
         - name: LinkedIn
           url: https://www.linkedin.com/in/jacob-t-lundquist/
           group: profile
-        # Hidden for now (issue #6): using role-specific CVs during the job search.
-        # - name: Resume
-        #   url: /cv.pdf
-        #   group: profile
+        - name: Resume
+          url: /cv.pdf
+          group: profile
         - name: Email
           url: mailto:lundq.jacob@gmail.com?subject=Hello%20from%20your%20website
           group: contact
