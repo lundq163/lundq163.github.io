@@ -217,3 +217,9 @@ a { text-decoration-color: var(--accent); }
     .citation-value { font-size: 24px; }
     .citation-label { font-size: 11px; }
 }
+
+/* Home page: bio sits below the icons and buttons (layouts/partials/index_profile.html) */
+.profile .profile-bio {
+    display: block;
+    margin-top: 22px;
+}
