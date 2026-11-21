@@ -23,6 +23,7 @@ menu:
 params:
     description: "MBA candidate at Columbia Business School and MS in AI/ML candidate at Columbia Engineering, with 5+ years in ML and software for neuroimaging research."
     author: Jacob Lundquist
+    highlightAuthor: Lundquist JT  # bolded in paper author lists
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: auto
