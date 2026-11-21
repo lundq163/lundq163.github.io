@@ -24,4 +24,4 @@ hugo server                        # preview at http://localhost:1313
 
 ## Deployment
 
-Pushing to `main` triggers `.github/workflows/hugo.yml`, which builds the site and deploys it to GitHub Pages. Build output (`public/`, `resources/`) is not committed; CI builds it fresh. The workflow also runs daily to refresh citation counts from OpenAlex; if OpenAlex is unreachable the site still builds, just without the counts. Keep the Hugo version in the workflow in step with your local `hugo version`.
+Pushing to `main` triggers `.github/workflows/hugo.yml`, which builds the site and deploys it to GitHub Pages. Build output (`public/`, `resources/`) is not committed; CI builds it fresh. The workflow also runs on the 1st of each month to refresh citation counts from OpenAlex; if OpenAlex is unreachable the site still builds, just without the counts. Keep the Hugo version in the workflow in step with your local `hugo version`.

@@ -1,5 +1,5 @@
 # Builds the Hugo site on every pull request (as a required check for main),
-# builds + deploys to GitHub Pages on every push to main, and rebuilds daily
+# builds + deploys to GitHub Pages on every push to main, and rebuilds monthly
 # so citation counts from OpenAlex stay current.
 name: Deploy Hugo site to Pages
 
@@ -11,9 +11,9 @@ on:
   # Build only (no deploy) for pull requests, so they can be required to pass
   pull_request:
 
-  # Daily rebuild + deploy to refresh citation counts (09:23 UTC)
+  # Monthly rebuild + deploy to refresh citation counts (1st of the month, 09:23 UTC)
   schedule:
-    - cron: "23 9 * * *"
+    - cron: "23 9 1 * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
