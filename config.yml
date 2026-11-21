@@ -24,6 +24,8 @@ params:
     description: "MBA candidate at Columbia Business School and MS in AI/ML candidate at Columbia Engineering, with 5+ years in ML and software for neuroimaging research."
     author: Jacob Lundquist
     highlightAuthor: Lundquist JT  # bolded in paper author lists
+    openalexAuthor: A5089037709  # citation counts on the Papers page (scripts/fetch_citations.py)
+    showCitedBy: false  # true adds "Cited by N" to each paper's author line
     # googleAnalyticsID: "G-XXXXX"
     DateFormat: "January 2006"
     defaultTheme: auto

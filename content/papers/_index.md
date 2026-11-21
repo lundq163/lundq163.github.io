@@ -2,6 +2,7 @@
 title: "Papers"
 description: "Peer-reviewed publications by Jacob Lundquist."
 contentBelow: true
+showCitations: true
 cascade:
     hideSummary: true  # paper cards show logos instead of the "Journal Vol (Year)" line
 ---

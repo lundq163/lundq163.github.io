@@ -4,3 +4,6 @@
 # Hugo build output (CI builds these fresh)
 /public/
 /resources/
+
+# Generated at build time by scripts/fetch_citations.py
+/data/citations.json

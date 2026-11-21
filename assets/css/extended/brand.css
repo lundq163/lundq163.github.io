@@ -172,3 +172,48 @@ a { text-decoration-color: var(--accent); }
 .paper-logos + .entry-content { margin: 0 0 12px; }
 .list-content-below { margin-top: 24px; }
 .paper-logo-credit { margin-top: 1.5em; opacity: 0.75; }
+
+/* Citation metrics below the Papers list (data from OpenAlex at build time) */
+.citation-summary {
+    margin-top: 28px;
+    padding: 18px 22px;
+    background: var(--entry);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+.citation-stats {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    text-align: center;
+}
+.citation-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.citation-value {
+    font-family: var(--font-head);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.15;
+    color: var(--primary);
+}
+.citation-label {
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--secondary);
+}
+.citation-source {
+    margin-top: 14px;
+    font-size: 13px;
+    text-align: center;
+    color: var(--secondary);
+}
+.citation-source a { color: var(--accent); }
+@media (max-width: 480px) {
+    .citation-summary { padding: 14px 10px; }
+    .citation-value { font-size: 24px; }
+    .citation-label { font-size: 11px; }
+}

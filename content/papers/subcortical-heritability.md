@@ -4,6 +4,7 @@ date: 2026-11-19
 author: ["Coffman C", "Feczko E", "Larsen B", "…", "Lundquist JT", "…", "Basu S"]
 description: "Heritability estimation of subcortical volumes in a multi-ancestry multi-site cohort study. Imaging Neuroscience 4 (2026)."
 summary: "Imaging Neuroscience 4 (2026)"
+doi: "10.1162/imag.a.1455"
 venue: imaging-neuroscience
 ---
 
