@@ -16,8 +16,9 @@
 {{- $meta = $meta | append (string .) }}
 {{- end }}
 
-{{- /* "Cited by N" from data/citations.json (written at build time by scripts/fetch_citations.py) */}}
-{{- with .Params.doi }}
+{{- /* "Cited by N" from data/citations.json (written at build time by scripts/fetch_citations.py).
+       Off unless params.showCitedBy is true in config.yml. */}}
+{{- with and site.Params.showCitedBy .Params.doi }}
 {{- $count := index (hugo.Data.citations.works | default dict) (lower .) | default 0 | int }}
 {{- if gt $count 0 }}
 {{- $meta = $meta | append (printf "<span class='cited-by'>Cited by %d</span>" $count) }}
