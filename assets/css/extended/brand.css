@@ -221,5 +221,5 @@ a { text-decoration-color: var(--accent); }
 /* Home page: bio sits below the icons and buttons (layouts/partials/index_profile.html) */
 .profile .profile-bio {
     display: block;
-    margin-top: 22px;
+    margin-top: 36px;
 }
