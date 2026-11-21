@@ -5,9 +5,6 @@ author: ["Hendrickson TJ", "Reiners P", "Moore LA", "Lundquist JT", "…", "Fecz
 description: "BIBSNet: A deep learning baby image brain segmentation network for MRI scans. Developmental Cognitive Neuroscience 79 (2026)."
 summary: "Developmental Cognitive Neuroscience 79 (2026)"
 venue: developmental-cognitive-neuroscience
-editPost:
-    URL: "https://doi.org/10.1016/j.dcn.2026.101706"
-    Text: "Developmental Cognitive Neuroscience"
 ---
 
 ##### Links
