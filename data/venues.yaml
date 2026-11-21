@@ -1,6 +1,7 @@
 # Publisher and journal logos shown on the Papers list and each paper page.
 # A paper picks its entry with `venue: <key>` in its front matter.
-# Optional: publisher_label (text shown beside the logo), publisher_large (bigger logo tile).
+# Optional: publisher_label (text shown beside the logo), publisher_large (bigger logo tile),
+# publisher_shift / journal_shift (vertical nudge as % of the logo's height, to line up text baselines).
 imaging-neuroscience:
   journal: Imaging Neuroscience
   journal_logo: /images/logos/imaging-neuroscience.png
@@ -18,5 +19,7 @@ developmental-cognitive-neuroscience:
 scientific-data:
   journal: Scientific Data
   journal_logo: /images/logos/scientific-data.svg
+  journal_shift: -6%
   publisher: Nature Portfolio
   publisher_logo: /images/logos/nature-portfolio.svg
+  publisher_shift: 5%

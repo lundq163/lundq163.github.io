@@ -3,11 +3,11 @@
 {{- with index hugo.Data.venues . }}
 <div class="paper-logos">
   <span class="paper-logo{{ if .publisher_large }} paper-logo--large{{ end }}" title="{{ .publisher }}">
-    <img src="{{ .publisher_logo | relURL }}" alt="{{ if not .publisher_label }}{{ .publisher }}{{ end }}" loading="lazy">
+    <img src="{{ .publisher_logo | relURL }}" alt="{{ if not .publisher_label }}{{ .publisher }}{{ end }}" loading="lazy"{{ with .publisher_shift }} style="transform: translateY({{ . | safeCSS }})"{{ end }}>
     {{- with .publisher_label }}<span class="paper-logo-label">{{ . }}</span>{{ end }}
   </span>
   <span class="paper-logo{{ if .journal_dark }} paper-logo--dark{{ end }}" title="{{ .journal }}">
-    <img src="{{ .journal_logo | relURL }}" alt="{{ .journal }}" loading="lazy">
+    <img src="{{ .journal_logo | relURL }}" alt="{{ .journal }}" loading="lazy"{{ with .journal_shift }} style="transform: translateY({{ . | safeCSS }})"{{ end }}>
   </span>
 </div>
 {{- end }}
