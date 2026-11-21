@@ -2,7 +2,14 @@
 {{- $author := (.Params.author | default site.Params.author) }}
 {{- $author_type := (printf "%T" $author) }}
 {{- if (or (eq $author_type "[]string") (eq $author_type "[]interface {}")) }}
-{{- (delimit $author ",&thinsp;" | safeHTML ) }}
+{{- /* Bold the site owner's name (site.Params.highlightAuthor) in author lists */}}
+{{- $names := slice }}
+{{- range $author }}
+{{- $name := . | htmlEscape }}
+{{- if eq . site.Params.highlightAuthor }}{{ $name = printf "<strong>%s</strong>" $name }}{{ end }}
+{{- $names = $names | append $name }}
+{{- end }}
+{{- (delimit $names ",&thinsp;" | safeHTML ) }}
 {{- else }}
 {{- $author }}
 {{- end }}
