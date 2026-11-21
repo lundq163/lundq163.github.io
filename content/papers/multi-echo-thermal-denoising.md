@@ -4,6 +4,7 @@ date: 2025-01-09
 author: ["Moser J", "Nelson SM", "Koirala S", "…", "Lundquist JT", "…", "Fair DA"]
 description: "Multi-echo acquisition and thermal denoising advances precision functional imaging. Imaging Neuroscience 3 (2025)."
 summary: "Imaging Neuroscience 3 (2025)"
+doi: "10.1162/imag_a_00426"
 venue: imaging-neuroscience
 ---
 

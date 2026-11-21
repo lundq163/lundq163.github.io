@@ -4,6 +4,7 @@ date: 2025-11-14
 author: ["Moser J", "Labonte AK", "Madison TJ", "…", "Lundquist JT", "…", "Sylvester CM"]
 description: "Precision functional neuroimaging reveals individually specific auditory responses in infants. Developmental Cognitive Neuroscience 77 (2026)."
 summary: "Developmental Cognitive Neuroscience 77 (2026)"
+doi: "10.1016/j.dcn.2025.101644"
 venue: developmental-cognitive-neuroscience
 ---
 

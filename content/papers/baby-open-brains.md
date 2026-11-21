@@ -4,6 +4,7 @@ date: 2025-08-14
 author: ["Feczko E", "Stoyell SM", "Moore LA", "…", "Lundquist JT", "…", "Elison JT"]
 description: "Baby Open Brains: An open-source dataset of infant brain segmentations. Scientific Data 12 (2025)."
 summary: "Scientific Data 12 (2025)"
+doi: "10.1038/s41597-025-05404-y"
 venue: scientific-data
 ---
 

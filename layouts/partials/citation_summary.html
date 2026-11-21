@@ -1,0 +1,15 @@
+{{- /* Author-level citation stats from data/citations.json (written at build time by
+       scripts/fetch_citations.py). Renders nothing if the data file is missing. */ -}}
+{{- with hugo.Data.citations }}
+{{- $a := .author }}
+<section class="citation-summary" aria-label="Citation metrics">
+  <div class="citation-stats">
+    <div class="citation-stat"><span class="citation-value">{{ lang.FormatNumber 0 $a.cited_by }}</span><span class="citation-label">Citations</span></div>
+    <div class="citation-stat"><span class="citation-value">{{ $a.h_index }}</span><span class="citation-label">h-index</span></div>
+    <div class="citation-stat"><span class="citation-value">{{ $a.i10_index }}</span><span class="citation-label">i10-index</span></div>
+  </div>
+  <p class="citation-source">
+    Source: <a href="{{ $a.url }}" target="_blank" rel="noopener noreferrer">OpenAlex</a>, updated {{ time.Format "January 2, 2006" .updated }}.
+  </p>
+</section>
+{{- end }}

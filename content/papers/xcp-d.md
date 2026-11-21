@@ -4,6 +4,7 @@ date: 2024-08-13
 author: ["Mehta K", "Salo T", "Madison TJ", "…", "Lundquist JT", "…", "Satterthwaite TD"]
 description: "XCP-D: A robust pipeline for the post-processing of fMRI data. Imaging Neuroscience 2 (2024)."
 summary: "Imaging Neuroscience 2 (2024)"
+doi: "10.1162/imag_a_00257"
 venue: imaging-neuroscience
 ---
 

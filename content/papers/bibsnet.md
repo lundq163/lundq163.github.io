@@ -4,6 +4,7 @@ date: 2026-03-09
 author: ["Hendrickson TJ", "Reiners P", "Moore LA", "Lundquist JT", "…", "Feczko E"]
 description: "BIBSNet: A deep learning baby image brain segmentation network for MRI scans. Developmental Cognitive Neuroscience 79 (2026)."
 summary: "Developmental Cognitive Neuroscience 79 (2026)"
+doi: "10.1016/j.dcn.2026.101706"
 venue: developmental-cognitive-neuroscience
 ---
 

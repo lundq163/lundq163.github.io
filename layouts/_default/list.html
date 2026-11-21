@@ -82,6 +82,10 @@
 </article>
 {{- end }}
 
+{{- if .Params.showCitations }}
+{{- partial "citation_summary.html" . }}
+{{- end }}
+
 {{- if and .Content .Params.contentBelow }}
 <div class="post-content list-content-below">
   {{- .Content }}

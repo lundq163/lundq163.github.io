@@ -1,5 +1,6 @@
-# Builds the Hugo site on every pull request (as a required check for main)
-# and builds + deploys to GitHub Pages on every push to main.
+# Builds the Hugo site on every pull request (as a required check for main),
+# builds + deploys to GitHub Pages on every push to main, and rebuilds daily
+# so citation counts from OpenAlex stay current.
 name: Deploy Hugo site to Pages
 
 on:
@@ -9,6 +10,10 @@ on:
 
   # Build only (no deploy) for pull requests, so they can be required to pass
   pull_request:
+
+  # Daily rebuild + deploy to refresh citation counts (09:23 UTC)
+  schedule:
+    - cron: "23 9 * * *"
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -51,6 +56,11 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      # Writes data/citations.json. If OpenAlex is unreachable, the site still
+      # builds; the citation counts are just hidden until the next run.
+      - name: Fetch citation counts from OpenAlex
+        continue-on-error: true
+        run: python3 scripts/fetch_citations.py
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
