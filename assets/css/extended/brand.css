@@ -218,8 +218,22 @@ a { text-decoration-color: var(--accent); }
     .citation-label { font-size: 11px; }
 }
 
-/* Home page: bio sits below the icons and buttons (layouts/partials/index_profile.html) */
+/* Home page order (layouts/partials/index_profile.html puts links before the bio):
+   phones show icons + buttons first so they're above the fold; wider screens
+   reorder visually to photo, name, bio, then icons + buttons. */
 .profile .profile-bio {
     display: block;
     margin-top: 36px;
+}
+@media (min-width: 769px) {
+    .profile .profile_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .profile .profile_inner > img { order: 1; }
+    .profile .profile_inner > h1 { order: 2; }
+    .profile .profile_inner > .profile-bio { order: 3; margin-top: 0; margin-bottom: 4px; }
+    .profile .profile_inner > .social-icons { order: 4; }
+    .profile .profile_inner > .buttons { order: 5; margin: 0; }
 }
