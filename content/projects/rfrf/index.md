@@ -17,4 +17,4 @@ summary: "MIDB · R"
 
 ##### Overview
 
-An R package for the Functional Random Forest. It trains and validates a random forest with cross-validation and a held-out test set, then uses the forest's proximity matrix to identify subtypes within the data. I was the main developer of the package, and used it in work presented at Flux 2024 on temperament subtypes linked to working memory.
+An R package for the Functional Random Forest. It trains and validates a random forest with cross-validation and a held-out test set, then uses the forest's proximity matrix to identify subtypes within the data.

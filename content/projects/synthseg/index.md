@@ -18,6 +18,6 @@ cover:
 
 ##### Overview
 
-DCAN Labs' fork of [SynthSeg](https://github.com/BBillot/SynthSeg), the contrast-agnostic MRI segmentation method by Benjamin Billot and colleagues. My contributions adapt it for the lab's lifespan segmentation work: adding lifespan label files, generating priors for whatever ages appear in the input filenames, supporting T2-only inputs, and adding a notebook for visualizing results.
+DCAN Labs' fork of [SynthSeg](https://github.com/BBillot/SynthSeg), the contrast-agnostic MRI segmentation method by Benjamin Billot and colleagues. The fork adapts it for the lab's lifespan segmentation work: adding lifespan label files, generating priors for whatever ages appear in the input filenames, supporting T2-only inputs, and adding a notebook for visualizing results.
 
 <small>Banner image from the original SynthSeg repository.</small>
