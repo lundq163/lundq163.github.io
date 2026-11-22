@@ -20,4 +20,4 @@ cover:
 
 ##### Overview
 
-MIDB's documentation handbook, hosted on Read the Docs: data processing, quality-control standards, and onboarding guides for collaborators and lab members. I started the project and contributed to it from 2023 to 2026, including the segmentation-model documentation.
+MIDB's documentation handbook, hosted on Read the Docs: data processing, quality-control standards, and onboarding guides for collaborators and lab members.

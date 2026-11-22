@@ -18,4 +18,4 @@ cover:
 
 ##### Overview
 
-Utilities for training and running nnU-Net brain-segmentation models on developmental MRI. The work extended the lab's segmentation workflows to hold up across age ranges, imaging modalities, and clinical populations, with a focus on infants. I led this effort, curating training datasets and supervising the researchers who developed the models.
+Utilities for training and running nnU-Net brain-segmentation models on developmental MRI. The work extended the lab's segmentation workflows to hold up across age ranges, imaging modalities, and clinical populations, with a focus on infants.

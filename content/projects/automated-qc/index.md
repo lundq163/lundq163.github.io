@@ -17,4 +17,4 @@ cover:
 
 ##### Overview
 
-An automated motion-QC system for infant brain MRI, built for the HEALthy Brain and Child Development (HBCD) study. A 3D ResNet regressor (MONAI, PyTorch) takes a T1- or T2-weighted scan and predicts its motion score, replacing most of the manual review each scan used to need. I started the project, designed the model, and wrote most of the code, including cross-validated training and TensorBoard monitoring on the university's HPC cluster.
+An automated motion-QC system for infant brain MRI, built for the HEALthy Brain and Child Development (HBCD) study. A 3D ResNet regressor (MONAI, PyTorch) takes a T1- or T2-weighted scan and predicts its motion score, replacing most of the manual review each scan used to need. Training uses cross-validation, with TensorBoard monitoring on the university's HPC cluster.

@@ -14,4 +14,4 @@ summary: "MIDB · Python, Shell, Jupyter Notebook"
 
 ##### Overview
 
-A PyQt interface that automates training deep-learning brain-segmentation models with SynthSeg and nnU-Net, from data preparation and preprocessing through inference. It supports saved presets and lets users turn individual steps on or off, so researchers without ML expertise can retrain models without specialist help. I directed the four-person team that built it, gathering requirements from principal investigators and contributing code.
+A PyQt interface that automates training deep-learning brain-segmentation models with SynthSeg and nnU-Net, from data preparation and preprocessing through inference. It supports saved presets and lets users turn individual steps on or off, so researchers without ML expertise can retrain models without specialist help.
