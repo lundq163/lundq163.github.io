@@ -12,8 +12,13 @@
 {{- $meta = $meta | append (i18n "words" .WordCount | default (printf "%d words" .WordCount)) }}
 {{- end }}
 
+{{- /* Projects list the course they came from (.Params.course) instead of authors */}}
+{{- with .Params.course }}
+{{- $meta = $meta | append (. | htmlEscape) }}
+{{- else }}
 {{- with (partial "author.html" .) }}
 {{- $meta = $meta | append (string .) }}
+{{- end }}
 {{- end }}
 
 {{- /* "Cited by N" from data/citations.json (written at build time by scripts/fetch_citations.py).

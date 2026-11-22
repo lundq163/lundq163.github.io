@@ -237,3 +237,8 @@ a { text-decoration-color: var(--accent); }
     .profile .profile_inner > .social-icons { order: 4; }
     .profile .profile_inner > .buttons { order: 5; margin: 0; }
 }
+
+/* Project cards: a short banner from the project (cover.jpg) takes the place
+   of the paper cards' logo row, so both kinds of card are about the same height */
+.post-entry .entry-cover { margin-bottom: 16px; }
+.post-entry .entry-cover img { display: block; width: 100%; }
