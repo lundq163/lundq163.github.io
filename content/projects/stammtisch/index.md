@@ -1,7 +1,7 @@
 ---
 title: "Stammtisch"
 date: 2026-11-03
-course: "Human-Centered Design and Innovation (HCDIx), Columbia MSxMBA"
+context: "Human-Centered Design and Innovation (HCDIx), Columbia MSxMBA"
 description: "Stammtisch: the regulars' table for your neighborhood. Team design document for Human-Centered Design and Innovation (HCDIx), Columbia MSxMBA, Fall 2026."
 summary: "Human-Centered Design and Innovation (HCDIx), Columbia MSxMBA · Fall 2026"
 cover:

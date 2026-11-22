@@ -12,8 +12,8 @@
 {{- $meta = $meta | append (i18n "words" .WordCount | default (printf "%d words" .WordCount)) }}
 {{- end }}
 
-{{- /* Projects list the course they came from (.Params.course) instead of authors */}}
-{{- with .Params.course }}
+{{- /* Projects show their context (a course, "Chrome extension", ...) (.Params.context) instead of authors */}}
+{{- with .Params.context }}
 {{- $meta = $meta | append (. | htmlEscape) }}
 {{- else }}
 {{- with (partial "author.html" .) }}
