@@ -48,12 +48,11 @@
     --lightpurple: #2E4A3D;
 }
 
-/* Home page has no header, so its toggle floats in the corner */
-.home-theme-toggle {
-    position: fixed;
-    top: 16px;
-    right: 16px;
-    z-index: 10;
+/* Light/dark toggle: one look on every page */
+.theme-toggle-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 6px 8px;
     line-height: 0;
     color: var(--primary);
@@ -62,7 +61,46 @@
     border-radius: var(--radius);
     cursor: pointer;
 }
-.home-theme-toggle:hover { background: var(--sunrise); color: var(--evergreen); }
+.theme-toggle-button:hover { background: var(--sunrise); color: var(--evergreen); }
+
+/* Home page has no header, so its toggle floats in the corner */
+.home-theme-toggle {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 10;
+}
+
+/* Page header: Papers / Projects on the left; logo, name, and toggle on the right.
+   Full width with the same 16px edge as the home toggle, everything centered on one line. */
+.nav {
+    max-width: none;
+    padding: 0 16px;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 16px;
+    height: 64px;        /* toggle sits 16px from the top, like the home page's */
+    line-height: normal;
+}
+.nav #menu,
+.nav .logo {
+    margin: 0;
+    align-items: center;
+}
+.nav #menu { overflow: visible; }  /* don't clip the active item's underline */
+.nav .logo { gap: 12px; flex-wrap: nowrap; }
+.nav .logo a {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+.nav .logo a img { transform: none; }
+.header-theme-toggle { margin: 0; font-size: inherit; }
+
+@media (max-width: 480px) {
+    .nav .logo a { font-size: 20px; }
+    .nav #menu li + li { margin-inline-start: 16px; }
+}
 
 body {
     font-family: var(--font-body);
