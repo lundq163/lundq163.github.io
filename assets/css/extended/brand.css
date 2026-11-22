@@ -66,7 +66,7 @@
 /* Home page has no header, so its toggle floats in the corner */
 .home-theme-toggle {
     position: fixed;
-    top: 16px;
+    top: 8px;
     right: 16px;
     z-index: 10;
 }
@@ -79,7 +79,7 @@
     align-items: center;
     flex-wrap: nowrap;
     gap: 16px;
-    height: 64px;        /* toggle sits 16px from the top, like the home page's */
+    height: 48px;        /* toggle sits 8px from the top, like the home page's */
     line-height: normal;
 }
 .nav #menu,
