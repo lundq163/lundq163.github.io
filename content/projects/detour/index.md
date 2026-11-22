@@ -1,12 +1,14 @@
 ---
 title: "detour"
 date: 2026-10-23
-context: "iOS app · Swift · in development"
+context: "iOS app · Swift"
 description: "detour: an iOS app that turns a walk into a quest, building a route of hidden stops around you."
-summary: "iOS app · Swift · in development"
 cover:
-    image: "cover.jpg"
-    alt: "detour wordmark with the app's lantern logo"
+    image: "LanternMark.png"
+    alt: "detour's lantern logo"
+    fit: "contain"
+    background: "#dee8de"
+summary: "iOS app · Swift"
 ---
 
 ##### Overview

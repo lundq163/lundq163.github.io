@@ -5,8 +5,9 @@ context: "Human-Centered Design and Innovation (HCDIx), Columbia MSxMBA"
 description: "Stammtisch: the regulars' table for your neighborhood. Team design document for Human-Centered Design and Innovation (HCDIx), Columbia MSxMBA, Fall 2026."
 summary: "Human-Centered Design and Innovation (HCDIx), Columbia MSxMBA · Fall 2026"
 cover:
-    image: "cover.jpg"
-    alt: "Stammtisch logo and tagline above an illustration of two people chatting at a pink café table"
+    image: "preview.jpg"
+    alt: "First page of the Stammtisch design document"
+    position: "center 42%"
 ---
 
 ##### Links

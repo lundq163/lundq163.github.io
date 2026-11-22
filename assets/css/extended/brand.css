@@ -238,7 +238,14 @@ a { text-decoration-color: var(--accent); }
     .profile .profile_inner > .buttons { order: 5; margin: 0; }
 }
 
-/* Project cards: a short banner from the project (cover.jpg) takes the place
-   of the paper cards' logo row, so both kinds of card are about the same height */
+/* Project cards: the original project image, framed as a wide banner.
+   Each page can set cover.fit / cover.position / cover.background in its front matter. */
 .post-entry .entry-cover { margin-bottom: 16px; }
-.post-entry .entry-cover img { display: block; width: 100%; }
+.post-entry .entry-cover img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 1;
+    object-fit: cover;
+    background: #fff;
+}

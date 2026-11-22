@@ -12,9 +12,10 @@
 {{- $meta = $meta | append (i18n "words" .WordCount | default (printf "%d words" .WordCount)) }}
 {{- end }}
 
-{{- /* Projects show their context (a course, "Chrome extension", ...) (.Params.context) instead of authors */}}
-{{- with .Params.context }}
-{{- $meta = $meta | append (. | htmlEscape) }}
+{{- /* Projects show their context (a course, a coding language, ...) instead of authors;
+       a project with an empty context shows only its date */}}
+{{- if isset .Params "context" }}
+{{- with .Params.context }}{{ $meta = $meta | append (. | htmlEscape) }}{{ end }}
 {{- else }}
 {{- with (partial "author.html" .) }}
 {{- $meta = $meta | append (string .) }}

@@ -1,12 +1,14 @@
 ---
 title: "Fundprint"
 date: 2026-11-17
-context: "Chrome extension · JavaScript"
+context: "Chrome extension · JavaScript, HTML, CSS, Python"
 description: "Fundprint: a nonpartisan browser extension that shows how US federal candidates' campaigns are funded, from official FEC filings."
-summary: "Chrome extension · JavaScript"
 cover:
-    image: "cover.jpg"
-    alt: "Fundprint wordmark with a dotted underline"
+    image: "icon128.png"
+    alt: "Fundprint's app icon"
+    fit: "contain"
+    background: "#f1f1f1"
+summary: "Chrome extension · JavaScript, HTML, CSS, Python"
 ---
 
 ##### Links

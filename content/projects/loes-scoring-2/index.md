@@ -1,12 +1,13 @@
 ---
 title: "Automated Loes Scoring"
 date: 2025-03-05
-context: "CDNI · Project lead"
+context: "MIDB · Python, Shell"
 description: "Deep-learning Loes scoring of brain MRI for cerebral adrenoleukodystrophy (ALD)."
-summary: "CDNI · Project lead"
+summary: "MIDB · Python, Shell"
 cover:
-    image: "cover.jpg"
-    alt: "Scatter plot of actual versus predicted Loes scores"
+    image: "loes_analysis_dashboard.png"
+    alt: "Loes score analysis dashboard: score distributions and progression across sessions"
+    position: "center 30%"
 ---
 
 ##### Links

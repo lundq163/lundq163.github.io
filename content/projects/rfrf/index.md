@@ -1,12 +1,12 @@
 ---
 title: "RFRF: Functional Random Forest"
 date: 2024-03-12
-context: "CDNI · Lead developer · R"
+context: "MIDB · R"
 description: "RFRF: an R package for the Functional Random Forest, which identifies subtypes in data using random-forest proximity."
-summary: "CDNI · Lead developer · R"
 cover:
-    image: "cover.jpg"
-    alt: "Flow diagram of the RFRF training, validation, and subtyping steps"
+    image: "flow_diagram.png"
+    alt: "RFRF flow diagram"
+summary: "MIDB · R"
 ---
 
 ##### Links

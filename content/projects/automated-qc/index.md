@@ -1,12 +1,12 @@
 ---
 title: "Automated MRI QC"
 date: 2026-08-13
-context: "CDNI · Lead developer"
+context: "MIDB · Jupyter Notebook, Python, Shell"
 description: "Automated motion quality control for infant MRI: a 3D ResNet regressor that predicts a motion score from each scan."
-summary: "CDNI · Lead developer"
+summary: "MIDB · Jupyter Notebook, Python, Shell"
 cover:
-    image: "cover.jpg"
-    alt: "Diagram of the 3D ResNet layers used in the automated QC model"
+    image: "resnet_architecture.png"
+    alt: "Diagram of the automated QC model's 3D ResNet architecture"
 ---
 
 ##### Links

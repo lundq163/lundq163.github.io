@@ -1,12 +1,13 @@
 ---
 title: "nnU-Net Brain Segmentation"
 date: 2026-05-08
-context: "CDNI · Project lead"
+context: "MIDB · Python, Shell, Jupyter Notebook, MATLAB"
 description: "Tools for training and running nnU-Net brain-segmentation models across the lifespan, from infancy onward."
-summary: "CDNI · Project lead"
+summary: "MIDB · Python, Shell, Jupyter Notebook, MATLAB"
 cover:
-    image: "cover.jpg"
-    alt: "Infant brain MRI slices with nnU-Net segmentation labels"
+    image: "4mo_subject01_axial_ground_truth_128.jpg"
+    alt: "Axial MRI slice of a 4-month-old's brain with segmentation labels"
+    background: "#000"
 ---
 
 ##### Links

@@ -1,12 +1,9 @@
 ---
 title: "Segmentation Model Training GUI"
 date: 2026-06-15
-context: "CDNI · Project lead"
+context: "MIDB · Python, Shell, Jupyter Notebook"
 description: "A graphical interface that lets non-ML users train brain-segmentation models with SynthSeg and nnU-Net."
-summary: "CDNI · Project lead"
-cover:
-    image: "cover.jpg"
-    alt: "Infant brain MRI slices with segmentation labels"
+summary: "MIDB · Python, Shell, Jupyter Notebook"
 ---
 
 ##### Links
